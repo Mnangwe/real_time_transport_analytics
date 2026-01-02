@@ -110,7 +110,7 @@ pip install -r requirements.txt
 python ./src/producers/tfl_producer.py
 
 # Run Consumer local script
-python ./src/producers/tfl_consumer.py
+python ./src/consumers/tfl_consumer.py
 
 # Access Airflow UI
 http://localhost:8080
