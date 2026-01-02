@@ -97,7 +97,12 @@ This ensures:
 * Easy local setup
 * Reproducibility
 
-## ▶️ Running the Project
+## ▶️ Getting Started
+### Prequisites
+* Docker
+* Python
+
+### Running the Project
 ```bash
 # Start all services
 docker compose up -d
@@ -112,9 +117,6 @@ python ./src/producers/tfl_producer.py
 # Run Consumer local script
 python ./src/consumers/tfl_consumer.py
 
-# Access Airflow UI
-http://localhost:8080
-
 # Access Postgres UI
 http://localhost:8081
 
@@ -124,6 +126,10 @@ pytest -m ./tests/test_data_quality.py -v
 # Run streamlit local
 streamlit run ./dashboard/app.py
 ```
+### Access Services
+* **Airflow UI**: http://localhost:8080 **↗**
+* **Adminer UI**: http://localhost:8081 **↗**
+* **Streamlit Dashboard**: http://localhost:8501 **↗**
 
 ## 📁 Project Structure
 ```text
