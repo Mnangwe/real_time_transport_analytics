@@ -156,7 +156,7 @@ streamlit run ./dashboard/app.py
 * Introduce transformations using Spark
 * Improve monitoring and alerting
 * Implement incremental loads
-* Add more grain on the data (More *store_id*)
+* Add more grain on the data (More *stop_id*)
 
 ## 👤 Author
 #### Azabenathi Pupuma
