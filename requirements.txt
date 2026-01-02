@@ -1,0 +1,23 @@
+# Data Processing
+pandas==2.3.3
+pyarrow==13.0.0
+
+# Streaming
+kafka-python==2.2.15
+
+# Database
+psycopg2-binary==2.9.11
+SQLAlchemy==2.0.45
+
+# API & Web
+requests==2.31.0
+
+# Data Quality
+great-expectations==0.18.0
+
+# Visualization
+streamlit==1.27.0
+plotly==5.17.0
+
+# Testing
+pytest==7.4.2

@@ -1,0 +1,12 @@
+.pytest_cache
+./config
+./checkpoints
+./data
+./logs
+./plugins
+
+./tests/_pycache_
+./dags/_pycache_
+
+.env
+Makefile
