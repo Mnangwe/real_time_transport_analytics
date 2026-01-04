@@ -5,10 +5,9 @@ import time
 from datetime import datetime
 import os
 from dotenv import load_dotenv
+import logging
 
 load_dotenv()
-
-import logging
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"

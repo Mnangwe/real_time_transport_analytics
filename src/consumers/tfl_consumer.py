@@ -4,8 +4,10 @@ from kafka import KafkaConsumer
 import psycopg2
 from psycopg2.extras import execute_batch
 from datetime import datetime
-import time
-import uuid
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 logging.basicConfig(
     level=logging.INFO,
@@ -27,11 +29,11 @@ class TransitEventConsumer:
         )
 
         self.db_conn = psycopg2.connect(
-            host='localhost',
-            port=5433,
-            database='transit_db',
-            user='transit_user',
-            password='transit_pass'
+            host=os.getenv('POSTGRES_HOST'),
+            port=os.getenv('POSTGRES_PORT'),
+            database=os.getenv('POSTGRES_DB'),
+            user=os.getenv('POSTGRES_USER'),
+            password=os.getenv('POSTGRES_PASSWORD')
         )
 
         self.batch = []
